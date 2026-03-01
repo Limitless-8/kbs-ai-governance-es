@@ -1,0 +1,66 @@
+{
+  "run_id": "20260127_011038",
+  "timestamp_utc": "2026-01-27T01:10:38+00:00",
+  "inputs": {
+    "uk_public_sector_applicability": "yes",
+    "decision_impact": "advisory",
+    "consequence_severity": "low",
+    "personal_data_usage": "yes",
+    "special_category_data": "no",
+    "biometric_processing": "no",
+    "childrens_data": "no",
+    "dpia_exists": "yes",
+    "human_oversight_plan": "yes",
+    "appeals_mechanism": "yes",
+    "explainability_provision": "yes",
+    "bias_fairness_assessment": "yes",
+    "security_controls": "yes",
+    "monitoring_incident_response": "yes",
+    "supplier_transparency": "yes",
+    "_meta": {
+      "reviewer": "",
+      "external_run_id": ""
+    }
+  },
+  "result": {
+    "primary_decision": "approve",
+    "constraint_decision": "confirm",
+    "fired_rules": [
+      "r01",
+      "r05",
+      "r09",
+      "r11",
+      "r13",
+      "r15",
+      "r17",
+      "r19",
+      "r21",
+      "r23",
+      "r24"
+    ],
+    "reasons": [
+      "UK public-sector applicability confirmed.",
+      "Data/system profile indicates one or more of: personal data, special category data, biometric processing, or children's data; heightened governance attention required.",
+      "DPIA exists and is completed.",
+      "Human oversight plan exists.",
+      "Appeals and recourse mechanisms exist.",
+      "Explainability provision exists.",
+      "Bias/fairness assessment exists.",
+      "Security controls documented.",
+      "Monitoring & incident response exists.",
+      "Supplier transparency status recorded (present or missing).",
+      "All minimum governance conditions met for low-risk approval."
+    ],
+    "constraint_reasons": [
+      "Constraint: decision issuance confirmed."
+    ],
+    "missing_critical": [],
+    "unclear_critical": [],
+    "unmet_for_approve": [],
+    "explanation_completeness_score": 100,
+    "_validation": {
+      "missing_critical": [],
+      "unclear_critical": []
+    }
+  }
+}

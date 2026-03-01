@@ -1,0 +1,60 @@
+{
+  "run_id": "20260126_222358_reject_veto",
+  "timestamp_utc": "2026-01-26T22:23:58+00:00",
+  "inputs": {
+    "uk_public_sector_applicability": "yes",
+    "decision_impact": "fully_automated",
+    "consequence_severity": "high",
+    "personal_data_usage": "yes",
+    "special_category_data": "no",
+    "biometric_processing": "no",
+    "childrens_data": "no",
+    "dpia_exists": "yes",
+    "human_oversight_plan": "yes",
+    "appeals_mechanism": "yes",
+    "explainability_provision": "yes",
+    "bias_fairness_assessment": "yes",
+    "security_controls": "yes",
+    "monitoring_incident_response": "yes",
+    "supplier_transparency": "yes"
+  },
+  "result": {
+    "primary_decision": "reject",
+    "constraint_decision": "veto",
+    "fired_rules": [
+      "r01",
+      "r03",
+      "r04",
+      "r05",
+      "r07",
+      "r09",
+      "r11",
+      "r13",
+      "r15",
+      "r17",
+      "r19",
+      "r21",
+      "r23"
+    ],
+    "reasons": [
+      "UK public-sector applicability confirmed.",
+      "High consequence severity triggers stronger governance needs.",
+      "Fully automated decision-making increases legitimacy risk.",
+      "Data/system profile indicates one or more of: personal data, special category data, biometric processing, or children's data; heightened governance attention required.",
+      "Reject triggered: fully automated decision-making with high consequence severity.",
+      "DPIA exists and is completed.",
+      "Human oversight plan exists.",
+      "Appeals and recourse mechanisms exist.",
+      "Explainability provision exists.",
+      "Bias/fairness assessment exists.",
+      "Security controls documented.",
+      "Monitoring & incident response exists.",
+      "Supplier transparency status recorded (present or missing)."
+    ],
+    "constraint_reasons": [
+      "Constraint: vetoed because fully automated + high severity is not legitimate for deployment decision."
+    ],
+    "missing_critical": [],
+    "unclear_critical": []
+  }
+}

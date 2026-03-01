@@ -1,0 +1,60 @@
+{
+  "run_id": "20260125_084742",
+  "timestamp_utc": "2026-01-25T08:47:42+00:00",
+  "inputs": {
+    "uk_public_sector_applicability": "no",
+    "decision_impact": "human_supported",
+    "consequence_severity": "medium",
+    "personal_data_usage": "unclear",
+    "special_category_data": "no",
+    "biometric_processing": "yes",
+    "childrens_data": "no",
+    "dpia_exists": "no",
+    "human_oversight_plan": "yes",
+    "appeals_mechanism": "yes",
+    "explainability_provision": "yes",
+    "bias_fairness_assessment": "yes",
+    "security_controls": "yes",
+    "monitoring_incident_response": "yes",
+    "supplier_transparency": "yes"
+  },
+  "result": {
+    "primary_decision": "refuse_to_decide",
+    "constraint_decision": "refuse_to_decide",
+    "fired_rules": [
+      "r02",
+      "r06",
+      "r10",
+      "r11",
+      "r13",
+      "r15",
+      "r17",
+      "r19",
+      "r21",
+      "r23"
+    ],
+    "reasons": [
+      "Jurisdiction unclear: cannot assert UK public-sector applicability.",
+      "Biometric processing present: heightened safeguards required.",
+      "DPIA missing or not completed.",
+      "Human oversight plan exists.",
+      "Appeals and recourse mechanisms exist.",
+      "Explainability provision exists.",
+      "Bias/fairness assessment exists.",
+      "Security controls documented.",
+      "Monitoring & incident response exists.",
+      "Supplier transparency exists."
+    ],
+    "constraint_reasons": [
+      "Constraint: jurisdiction unclear => refuse to decide."
+    ],
+    "missing_critical": [],
+    "unmet_for_approve": [
+      "jurisdiction_ok",
+      "severity_low",
+      "impact_advisory",
+      "dpia_present"
+    ],
+    "explanation_completeness_score": 88
+  }
+}

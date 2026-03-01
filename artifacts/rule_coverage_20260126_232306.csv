@@ -1,0 +1,26 @@
+rule_id,covered,hit_count,scenarios
+r01,yes,14,approve | approve_with_safeguards | escalate | escalate_appeals_no | escalate_bias_no | escalate_dpia_no | escalate_explainability_no | escalate_monitoring_no | escalate_oversight_no | escalate_security_no | escalate_supplier_no | refuse_missing_dpia | refuse_unclear_dpia | reject_veto
+r02,yes,2,refuse_jurisdiction_no | refuse_jurisdiction_unclear
+r03,yes,2,escalate | reject_veto
+r04,yes,2,approve_with_safeguards | reject_veto
+r05,yes,16,approve | approve_with_safeguards | escalate | escalate_appeals_no | escalate_bias_no | escalate_dpia_no | escalate_explainability_no | escalate_monitoring_no | escalate_oversight_no | escalate_security_no | escalate_supplier_no | refuse_jurisdiction_no | refuse_jurisdiction_unclear | refuse_missing_dpia | refuse_unclear_dpia | reject_veto
+r06,yes,4,refuse_jurisdiction_no | refuse_jurisdiction_unclear | refuse_missing_dpia | refuse_unclear_dpia
+r07,yes,1,reject_veto
+r08,yes,1,approve_with_safeguards
+r09,yes,13,approve | approve_with_safeguards | escalate | escalate_appeals_no | escalate_bias_no | escalate_explainability_no | escalate_monitoring_no | escalate_oversight_no | escalate_security_no | escalate_supplier_no | refuse_jurisdiction_no | refuse_jurisdiction_unclear | reject_veto
+r10,yes,1,escalate_dpia_no
+r11,yes,15,approve | approve_with_safeguards | escalate | escalate_appeals_no | escalate_bias_no | escalate_dpia_no | escalate_explainability_no | escalate_monitoring_no | escalate_security_no | escalate_supplier_no | refuse_jurisdiction_no | refuse_jurisdiction_unclear | refuse_missing_dpia | refuse_unclear_dpia | reject_veto
+r12,yes,1,escalate_oversight_no
+r13,yes,15,approve | approve_with_safeguards | escalate | escalate_bias_no | escalate_dpia_no | escalate_explainability_no | escalate_monitoring_no | escalate_oversight_no | escalate_security_no | escalate_supplier_no | refuse_jurisdiction_no | refuse_jurisdiction_unclear | refuse_missing_dpia | refuse_unclear_dpia | reject_veto
+r14,yes,1,escalate_appeals_no
+r15,yes,15,approve | approve_with_safeguards | escalate | escalate_appeals_no | escalate_bias_no | escalate_dpia_no | escalate_monitoring_no | escalate_oversight_no | escalate_security_no | escalate_supplier_no | refuse_jurisdiction_no | refuse_jurisdiction_unclear | refuse_missing_dpia | refuse_unclear_dpia | reject_veto
+r16,yes,1,escalate_explainability_no
+r17,yes,15,approve | approve_with_safeguards | escalate | escalate_appeals_no | escalate_dpia_no | escalate_explainability_no | escalate_monitoring_no | escalate_oversight_no | escalate_security_no | escalate_supplier_no | refuse_jurisdiction_no | refuse_jurisdiction_unclear | refuse_missing_dpia | refuse_unclear_dpia | reject_veto
+r18,yes,1,escalate_bias_no
+r19,yes,15,approve | approve_with_safeguards | escalate | escalate_appeals_no | escalate_bias_no | escalate_dpia_no | escalate_explainability_no | escalate_monitoring_no | escalate_oversight_no | escalate_supplier_no | refuse_jurisdiction_no | refuse_jurisdiction_unclear | refuse_missing_dpia | refuse_unclear_dpia | reject_veto
+r20,yes,1,escalate_security_no
+r21,yes,15,approve | approve_with_safeguards | escalate | escalate_appeals_no | escalate_bias_no | escalate_dpia_no | escalate_explainability_no | escalate_oversight_no | escalate_security_no | escalate_supplier_no | refuse_jurisdiction_no | refuse_jurisdiction_unclear | refuse_missing_dpia | refuse_unclear_dpia | reject_veto
+r22,yes,1,escalate_monitoring_no
+r23,yes,16,approve | approve_with_safeguards | escalate | escalate_appeals_no | escalate_bias_no | escalate_dpia_no | escalate_explainability_no | escalate_monitoring_no | escalate_oversight_no | escalate_security_no | escalate_supplier_no | refuse_jurisdiction_no | refuse_jurisdiction_unclear | refuse_missing_dpia | refuse_unclear_dpia | reject_veto
+r24,yes,1,approve
+r25,yes,9,escalate | escalate_appeals_no | escalate_bias_no | escalate_dpia_no | escalate_explainability_no | escalate_monitoring_no | escalate_oversight_no | escalate_security_no | escalate_supplier_no

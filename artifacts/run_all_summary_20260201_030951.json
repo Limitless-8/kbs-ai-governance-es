@@ -1,0 +1,123 @@
+{
+  "timestamp_utc": "2026-02-01T03:09:55+00:00",
+  "overall_ok": true,
+  "logs_present": true,
+  "log_count": 123,
+  "steps": [
+    {
+      "step": "pytest",
+      "ok": true,
+      "returncode": 0,
+      "stdout": ".......                                                                  [100%]\n7 passed in 0.66s",
+      "stderr": ""
+    },
+    {
+      "step": "suite_and_rule_coverage",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "Wrote CSV: C:\\Users\\Shery\\Downloads\\kbs-ai-governance-es\\artifacts\\suite_20260201_030952.csv\nWrote rule coverage CSV: C:\\Users\\Shery\\Downloads\\kbs-ai-governance-es\\artifacts\\rule_coverage_20260201_030952.csv\nAll scenarios matched expected outcomes.\nCovered 25 / 25 rules.",
+      "stderr": ""
+    },
+    {
+      "step": "eda_logs",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "=== Basic counts ===\nTotal runs: 123\n\n=== Outcome distribution: primary_decision ===\nprimary_decision\nrefuse_to_decide           45\napprove                    40\nescalate                   14\napprove_with_safeguards    12\nreject                     12\n\n=== Outcome distribution: constraint_decision ===\nconstraint_decision\nconfirm             66\nrefuse_to_decide    45\nveto                12\n\n=== Top fired rules ===\nfired_rules\nr15    123\nr13    123\nr11    123\nr19    123\nr21    123\nr23    123\nr17    123\nr05    111\nr01    100\nr09     99\nr06     43\nr24     34\nr03     24\nr04     24\nr02     23\n\n=== Refusal drivers (constraint=refuse_to_decide) ===\n\n- Prolog missing_critical:\nmissing_critical\ndpia_exists                       13\nuk_public_sector_applicability     1\n\n- Validation missing_critical: (none)\n\n- Validation unclear_critical: (none)\n\n=== Escalation drivers (primary_decision=escalate) ===\nfired_rules\nr01    14\nr11    14\nr17    14\nr15    14\nr13    14\nr21    14\nr23    14\nr19    14\nr09    13\nr05    13\nr25    13\nr03    12\nr08     1\n\n=== Done ===",
+      "stderr": ""
+    },
+    {
+      "step": "determinism_check",
+      "ok": true,
+      "result_1": {
+        "primary_decision": "approve_with_safeguards",
+        "constraint_decision": "confirm",
+        "fired_rules": [
+          "r01",
+          "r04",
+          "r05",
+          "r08",
+          "r09",
+          "r11",
+          "r13",
+          "r15",
+          "r17",
+          "r19",
+          "r21",
+          "r23"
+        ],
+        "reasons": [
+          "UK public-sector applicability confirmed.",
+          "Fully automated decision-making increases legitimacy risk.",
+          "Data/system profile indicates one or more of: personal data, special category data, biometric processing, or children's data; heightened governance attention required.",
+          "Safeguards required: fully automated decision-making (non-high severity) cannot be approved without additional controls.",
+          "DPIA exists and is completed.",
+          "Human oversight plan exists.",
+          "Appeals and recourse mechanisms exist.",
+          "Explainability provision exists.",
+          "Bias/fairness assessment exists.",
+          "Security controls documented.",
+          "Monitoring & incident response exists.",
+          "Supplier transparency status recorded (present or missing)."
+        ],
+        "constraint_reasons": [
+          "Constraint: decision issuance confirmed."
+        ],
+        "mandatory_safeguards": [
+          "human_oversight_required",
+          "appeal_route_required",
+          "explainability_required",
+          "monitoring_required",
+          "incident_response_required",
+          "supplier_transparency_required"
+        ],
+        "missing_critical": [],
+        "unclear_critical": []
+      },
+      "result_2": {
+        "primary_decision": "approve_with_safeguards",
+        "constraint_decision": "confirm",
+        "fired_rules": [
+          "r01",
+          "r04",
+          "r05",
+          "r08",
+          "r09",
+          "r11",
+          "r13",
+          "r15",
+          "r17",
+          "r19",
+          "r21",
+          "r23"
+        ],
+        "reasons": [
+          "UK public-sector applicability confirmed.",
+          "Fully automated decision-making increases legitimacy risk.",
+          "Data/system profile indicates one or more of: personal data, special category data, biometric processing, or children's data; heightened governance attention required.",
+          "Safeguards required: fully automated decision-making (non-high severity) cannot be approved without additional controls.",
+          "DPIA exists and is completed.",
+          "Human oversight plan exists.",
+          "Appeals and recourse mechanisms exist.",
+          "Explainability provision exists.",
+          "Bias/fairness assessment exists.",
+          "Security controls documented.",
+          "Monitoring & incident response exists.",
+          "Supplier transparency status recorded (present or missing)."
+        ],
+        "constraint_reasons": [
+          "Constraint: decision issuance confirmed."
+        ],
+        "mandatory_safeguards": [
+          "human_oversight_required",
+          "appeal_route_required",
+          "explainability_required",
+          "monitoring_required",
+          "incident_response_required",
+          "supplier_transparency_required"
+        ],
+        "missing_critical": [],
+        "unclear_critical": []
+      }
+    }
+  ]
+}
